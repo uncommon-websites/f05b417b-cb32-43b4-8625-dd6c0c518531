@@ -88,10 +88,6 @@
     {
       title: "Safer, smarter operations",
       description: "Prevent accidents with real-time collision alerts, zone management, and situational awareness."
-    },
-    {
-      title: "Zero-shot loader automation",
-      description: "Fully autonomous material handling adapts instantly to changing environments—no manual retraining."
     }
   ]}
 />
