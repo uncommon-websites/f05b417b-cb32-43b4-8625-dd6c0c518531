@@ -7,16 +7,55 @@
 	import CallToAction from "$lib/components/layout/CallToAction.svelte";
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
-	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+	import CustomerCardHero from "$lib/components/layout/hero-sections/CustomerCardHero.svelte";
 </script>
 
-<Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="/sample.png"
-	generating
+<CustomerCardHero
+  centered={true}
+  title="Trusted by teams built for the toughest work"
+  subtitle="sensmore partners with leaders in mining, construction, defense, and agriculture to keep critical machinery running—safely, efficiently, and without interruption."
+  customers={[
+    {
+      name: "CEMEX",
+      position: "Quarry operations manager",
+      imageSrc: "/generated/image-a-female-mining-manager-standing-confide.webp",
+      quote: "With sensmore’s technology, our loaders operate smoothly even in the worst weather—keeping throughput steady and teams safe."
+    },
+    {
+      name: "Harrington Construction",
+      position: "Construction supervisor",
+      imageSrc: "/generated/image-a-male-construction-site-supervisor-stan.webp",
+      quote: "Installing Machine Assist across machines simplified our safety process—reducing downtime and increasing site coordination."
+    },
+    {
+      name: "Paus",
+      position: "Defense site engineer",
+      imageSrc: "/generated/image-a-female-engineer-in-the-defense-industr.webp",
+      quote: "In underground defense sites, communication is mission critical. sensmore connects people and machines when it matters most."
+    },
+    {
+      name: "AgriWorks Co.",
+      position: "Head of agricultural operations",
+      imageSrc: "/generated/image-a-male-leader-in-agricultural-operations.webp",
+      quote: "Before sensmore, visibility on crops and carriers was our blind spot. Now we work with precision, day or night."
+    },
+    {
+      name: "Lhoist",
+      position: "Executive, mining operations",
+      imageSrc: "/generated/image-a-female-mining-executive-is-seated-in-a.webp",
+      quote: "The real-time site visibility has changed how we manage operations. It’s cleaner, faster, and decisions happen on the ground."
+    }
+  ]}
 />
-<LogoScroller label="" generating />
+
+<LogoScroller
+	label="Trusted by industry leaders"
+	logoUrls={[
+		'https://logo.clearbit.com/bhp.com',
+		'https://logo.clearbit.com/cat.com',
+		'https://logo.clearbit.com/cemex.com'
+	]}
+/>
 
 <Summary
 	generating
@@ -24,38 +63,8 @@
 	text="Our technology delivers measurable results through secure, adaptable solutions that directly increase productivity and drive growth."
 />
 
-<Testimonials
-	generating
-	testimonials={[
-		{
-			name: "Jane Smith",
-			position: "CTO",
-			company: "Tech Innovations",
-			quote:
-				"Their cutting-edge automation boosted our productivity by 35%.\nThe intuitive interface reduced training time and improved team adoption.",
-			image:
-				"https://images.unsplash.com/photo-1571513722275-4b41940f54b8?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-		},
-		{
-			name: "John Doe",
-			position: "Director of Operations",
-			company: "Global Solutions",
-			quote:
-				"Their robust security protocols gave us confidence in handling sensitive data.\nThe 24/7 support team resolved issues within hours, not days.",
-			image:
-				"https://images.unsplash.com/photo-1600603405959-6d623e92445c?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-		},
-		{
-			name: "Sarah Johnson",
-			position: "Product Manager",
-			company: "Future Systems",
-			quote:
-				"The scalable platform grew seamlessly with our business needs.\nTheir customization options allowed us to tailor solutions perfectly to our workflows.",
-			image:
-				"https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-		}
-	]}
-/>
+
+
 
 <Features
 	generating
