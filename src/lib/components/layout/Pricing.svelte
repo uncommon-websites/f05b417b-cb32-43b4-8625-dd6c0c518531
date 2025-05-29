@@ -35,116 +35,149 @@ Please update features according to the company's product offering. Do not remov
 
 	// Props
 	const {
-		title = "Simple, transparent pricing",
-		subtitle = "Choose the plan that works best for your needs",
-		tierNames = ["Starter", "Pro", "Enterprise"],
+		title = "Smarter machines. Safer sites. Real results.",
+		subtitle = "Pick the right plan for your site",
+		tierNames = ["Pilot", "Standard", "Enterprise"],
 		features = [
 			{
-				name: "Projects",
+				name: "Site OS: Live operational dashboard",
 				tiers: {
-					Starter: "5",
-					Pro: "Unlimited",
-					Enterprise: "Unlimited"
-				}
-			},
-			{
-				name: "Team members",
-				tiers: {
-					Starter: "1",
-					Pro: "10",
-					Enterprise: "Unlimited"
-				}
-			},
-			{
-				name: "Storage",
-				tiers: {
-					Starter: "1GB",
-					Pro: "10GB",
-					Enterprise: "Unlimited"
-				}
-			},
-			{
-				name: "API access",
-				tiers: {
-					Starter: false,
-					Pro: true,
+					Pilot: true,
+					Standard: true,
 					Enterprise: true
 				}
 			},
 			{
-				name: "Custom domains",
+				name: "Machine Assist: Real-time collision and safety alerts",
 				tiers: {
-					Starter: false,
-					Pro: true,
+					Pilot: true,
+					Standard: true,
 					Enterprise: true
 				}
 			},
 			{
-				name: "Analytics",
+				name: "Live Mapping (4D radar & cameras)",
 				tiers: {
-					Starter: "Basic",
-					Pro: "Advanced",
-					Enterprise: "Advanced"
-				}
-			},
-			{
-				name: "Support response time",
-				tiers: {
-					Starter: "24 hours",
-					Pro: "4 hours",
-					Enterprise: "1 hour"
-				}
-			},
-			{
-				name: "Dedicated account manager",
-				tiers: {
-					Starter: false,
-					Pro: false,
+					Pilot: false,
+					Standard: true,
 					Enterprise: true
 				}
 			},
 			{
-				name: "SLA",
+				name: "Eye: Material flow and blockage monitoring",
 				tiers: {
-					Starter: false,
-					Pro: false,
-					Enterprise: "99.9%"
+					Pilot: false,
+					Standard: true,
+					Enterprise: true
+				}
+			},
+			{
+				name: "Loader Automation (zero-shot autonomy)",
+				tiers: {
+					Pilot: false,
+					Standard: false,
+					Enterprise: true
+				}
+			},
+			{
+				name: "Modular hardware kit & Beacon support",
+				tiers: {
+					Pilot: true,
+					Standard: true,
+					Enterprise: true
+				}
+			},
+			{
+				name: "Compatible with existing sensors & displays",
+				tiers: {
+					Pilot: true,
+					Standard: true,
+					Enterprise: true
+				}
+			},
+			{
+				name: "Custom operational zones & alerts",
+				tiers: {
+					Pilot: true,
+					Standard: true,
+					Enterprise: true
+				}
+			},
+			{
+				name: "Cloud-based analytics & DTM data integrations",
+				tiers: {
+					Pilot: false,
+					Standard: true,
+					Enterprise: true
+				}
+			},
+			{
+				name: "Operational support & onboarding",
+				tiers: {
+					Pilot: "Email only",
+					Standard: "Email + in-app",
+					Enterprise: "Premium, on-site enablement"
+				}
+			},
+			{
+				name: "Support SLA",
+				tiers: {
+					Pilot: "3 business days",
+					Standard: "24 hours",
+					Enterprise: "1 hour SLA"
+				}
+			},
+			{
+				name: "Custom workflow or API integration",
+				tiers: {
+					Pilot: false,
+					Standard: false,
+					Enterprise: true
+				}
+			},
+			{
+				name: "Security/compliance (GDPR/SAML/SSO)",
+				tiers: {
+					Pilot: false,
+					Standard: false,
+					Enterprise: true
 				}
 			}
 		],
 		tiers = [
 			{
-				name: "Starter",
-				monthlyPrice: 9.99,
-				yearlyPrice: 7.99, // 20% savings
-				description: "Perfect for individuals and small projects",
+				name: "Pilot",
+				monthlyPrice: null,
+				yearlyPrice: null,
+				description: "Validate impact on one site with our core modules. Ideal for operators interested in testing performance and ROI before larger rollouts.",
 				features: [
-					"Up to 5 projects",
-					"Basic analytics",
-					"24-hour support response time",
-					"1GB storage"
+					"Site OS: Live operational dashboard",
+					"Machine Assist: Collision and people/machine alerts",
+					"Zone control and basic fleet insights",
+					"Modular hardware kit (quick deployment)",
+					"Compatible with existing sensors/displays",
+					"No site integration required"
 				],
 				cta: {
-					label: "Get started",
-					href: "/signup?plan=starter"
+					label: "Book a pilot",
+					href: "/contact?demo=pilot"
 				}
 			},
 			{
-				name: "Pro",
-				monthlyPrice: 29.99,
-				yearlyPrice: 23.99, // 20% savings
-				description: "For growing teams and businesses",
+				name: "Standard",
+				monthlyPrice: null,
+				yearlyPrice: null,
+				description: "For multi-site operators needing advanced live mapping and insights—improve productivity at scale, without new infrastructure.",
 				features: [
-					"Unlimited projects",
-					"Advanced analytics",
-					"4-hour support response time",
-					"10GB storage",
-					"Custom domains",
-					"Team collaboration tools"
+					"Everything in Pilot",
+					"Live Mapping & Eye modules: Real-time terrain, blockages, and material flow monitoring",
+					"Customizable zones and visual data integrations",
+					"Cloud-based analytics & reports",
+					"Email & in-app operational support"
 				],
 				cta: {
-					label: "Get started",
-					href: "/signup?plan=pro"
+					label: "Get a quote",
+					href: "/contact?demo=standard"
 				},
 				highlight: true
 			},
@@ -152,19 +185,19 @@ Please update features according to the company's product offering. Do not remov
 				name: "Enterprise",
 				monthlyPrice: null,
 				yearlyPrice: null,
-				description: "For large organizations with specific needs",
+				description: "For large operators ready to automate, integrate, and control operations at scale. Site-wide automation, full visibility, and dedicated enablement included.",
 				features: [
-					"Everything in Pro",
-					"Dedicated account manager",
-					"1-hour support response time",
-					"Unlimited storage",
-					"Advanced security features",
-					"Custom integrations",
-					"99.9% uptime SLA"
+					"Everything in Standard",
+					"Loader Automation: Zero-shot, language-controlled material handling",
+					"Custom workflow/API integration",
+					"Premium support SLA & on-site enablement",
+					"Strategic onboarding & training (ops & IT)",
+					"Enterprise security/compliance (GDPR, SAML, SSO)",
+					"Volume/fleet global discounts available"
 				],
 				cta: {
 					label: "Contact sales",
-					href: "/contact"
+					href: "/contact?demo=enterprise"
 				}
 			}
 		]

@@ -58,77 +58,109 @@
 />
 
 <Summary
-	generating
 	title="What we do"
-	text="Our technology delivers measurable results through secure, adaptable solutions that directly increase productivity and drive growth."
+	text="sensmore brings intelligent automation to the world’s toughest machines. Our embodied AI platform makes heavy equipment smarter, safer, and ready for any challenge—across mining, construction, defense, and agriculture."
 />
 
 
 
 
 <Features
-	generating
-	title="Features"
-	subtitle="Some features"
-	features={[
-		{
-			title: "Streamlined Workflows",
-			description:
-				"Automate repetitive tasks and connect systems to improve productivity with our industry-leading 87% time savings."
-		},
-		{
-			title: "Data Analysis",
-			description:
-				"Extract meaningful insights from your data with powerful analytical tools backed by proprietary AI algorithms that are 3x more accurate than competitors."
-		},
-		{
-			title: "Secure Collaboration",
-			description:
-				"Work together seamlessly while maintaining strict data privacy standards with our zero-knowledge architecture and military-grade encryption."
-		}
-	]}
+  title="Smarter machines for the real world"
+  subtitle="AI-driven features designed for harsh work environments"
+  features={[
+    {
+      title: "Embodied AI for heavy machinery",
+      description: "Physical AI and VLAM bring human-like intelligence to your loaders, dozers, and haulers."
+    },
+    {
+      title: "4D radar and vision fusion",
+      description: "Reliable, all-weather detection that sees through rain, fog, dust, and darkness."
+    },
+    {
+      title: "Real-time digital twin",
+      description: "Live site mapping and terrain updates keep your operations precise, productive, and safe."
+    },
+    {
+      title: "Rapid retrofit & integration",
+      description: "Modular hardware and software install on existing fleets—no rip and replace needed."
+    },
+    {
+      title: "Safer, smarter operations",
+      description: "Prevent accidents with real-time collision alerts, zone management, and situational awareness."
+    },
+    {
+      title: "Zero-shot loader automation",
+      description: "Fully autonomous material handling adapts instantly to changing environments—no manual retraining."
+    }
+  ]}
 />
 
 <UseCases
-	generating
 	title="Use Cases"
 	subtitle="Real-world applications for your business needs"
 	useCases={[
 		{
-			title: "Streamlined Workflows",
-			description:
-				"Automate repetitive tasks and connect systems to improve productivity with our industry-leading 87% time savings.",
-			image:
-				"https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
+			title: "Prevent unplanned downtime",
+			description: "Continuous monitoring of equipment health and site activity spots problems early—stopping costly failures before they start.",
+			image: "/generated/image-a-heavy-mining-loader-with-workers-navig.webp",
 			link: {
-				href: "/use-cases/workflows",
+				href: "/use-cases/equipment-health-monitoring",
+				label: "See how it works"
+			}
+		},
+		{
+			title: "Operate safely in any condition",
+			description: "AI-powered loaders and assists keep machines and teams protected with collision alerts and situational awareness—even in fog, dust, or darkness.",
+			image: "/generated/image-a-construction-loader-operating-in-low-v.webp",
+			link: {
+				href: "/use-cases/safe-all-weather-operation",
 				label: "Learn more"
 			}
 		},
 		{
-			title: "Data Analysis",
-			description:
-				"Extract meaningful insights from your data with powerful analytical tools backed by proprietary AI algorithms that are 3x more accurate than competitors.",
-			image:
-				"https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2488&q=80",
+			title: "Gain visibility, manage more site",
+			description: "Live site mapping and real-time insights let you track every truck, loader, and material flow from one dashboard—no matter the scale.",
+			image: "/generated/image-a-group-of-engineers-gathered-outdoors-a.webp",
 			link: {
-				href: "/use-cases/data-analysis",
-				label: "Explore analytics"
-			}
-		},
-		{
-			title: "Secure Collaboration",
-			description:
-				"Work together seamlessly while maintaining strict data privacy standards with our zero-knowledge architecture and military-grade encryption.",
-			image:
-				"https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
-			link: {
-				href: "/use-cases/collaboration",
-				label: "See security features"
+				href: "/use-cases/live-site-visibility",
+				label: "See live dashboard"
 			}
 		}
 	]}
 />
 
-<AboutTeaser generating />
-<CallToAction generating />
+<Testimonials
+  testimonials={[
+    {
+      name: "Malik Tenner",
+      position: "Pit Supervisor",
+      company: "Raxon Minerals",
+      quote: "Planning and dispatch that used to take me 3 hours a day now takes 30 minutes because of the live insights from Site OS. That's time I can spend solving bigger problems.",
+      image: "/generated/image-a-male-mining-supervisor-stands-confiden.webp"
+    },
+    {
+      name: "Liesa Walcott",
+      position: "Fleet Safety Lead",
+      company: "RegenField Construction",
+      quote: "Before sensmore Machine Assist, we averaged two vehicle-related incidents a month. We've now gone five months without a single one—and that’s through every weather curveball.",
+      image: "/generated/image-a-female-construction-fleet-safety-lead-.webp"
+    },
+    {
+      name: "Hagen Blix",
+      position: "Operations Director",
+      company: "Norholm Resources",
+      quote: "We saved over €180,000 in the first quarter alone by reducing unplanned crusher stoppages. Just seeing boulders before they break things makes all the difference.",
+      image: "/generated/image-a-male-mining-operations-director-stands.webp"
+    }
+  ]}
+/>
+
+<AboutTeaser />
+<CallToAction
+  title="Smarter machines. Safer sites."
+  subtitle="Start your transformation"
+  description="Connect with sensmore to reduce risk, cut downtime, and get full visibility—directly from the machines you already run."
+  imageSrc="/generated/image-a-cheerful-mining-industry-manager-stand.webp"
+  callsToAction={[{ href: '/contact', label: 'Connect with us', variant: 'primary' }]}
+/>

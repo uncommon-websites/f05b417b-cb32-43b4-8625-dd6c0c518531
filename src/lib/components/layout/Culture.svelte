@@ -38,26 +38,28 @@
 	<div
 		class="section-py section-px container mx-auto grid gap-8 [--gap:--spacing(8)] [--radius:var(--radius-2xl)]"
 	>
-		<SectionHeader title="Our culture." subtitle="The values that guide everything we do" />
+		<SectionHeader title="How we work together." subtitle="Five values that drive sensmore forward" />
 
-		<div
-			class="grid gap-(--gap)"
-			style:grid-template-columns="repeat(auto-fit, minmax(280px, 1fr))"
-		>
-			{#each values as value, i}
-				<div
-					bind:this={cards[i]}
-					class="relative border-t border-gray-200 pt-4 dark:border-gray-900"
-				>
-					<!-- Content -->
-					<div class="text-caption z-10">
-						<div>
-							<div class="text-headline mb-[1em]">{value.title}</div>
-							<div class="text-body text-gray-500 dark:text-gray-400">{value.description}</div>
-						</div>
-					</div>
-				</div>
-			{/each}
-		</div>
+  <div class="grid lg:grid-cols-5 gap-(--gap)">
+    <div class="row-span-2 col-span-1 lg:col-span-2 flex flex-col items-center justify-center">
+      <img src="/generated/image-a-diverse-team-of-people-from-different-.webp" alt="The sensmore team working together in an industrial setting" class="rounded-xl w-full object-cover aspect-[3/4] mb-6 lg:mb-0"/>
+    </div>
+    <div class="col-span-1 lg:col-span-3 grid gap-(--gap)">
+      {#each values as value, i}
+        <div
+          bind:this={cards[i]}
+          class="relative border-t border-gray-200 pt-4 dark:border-gray-900"
+        >
+          <!-- Content -->
+          <div class="text-caption z-10">
+            <div>
+              <div class="text-headline mb-[1em]">{value.title}</div>
+              <div class="text-body text-gray-500 dark:text-gray-400">{value.description}</div>
+            </div>
+          </div>
+        </div>
+      {/each}
+    </div>
+  </div>
 	</div>
 </section>

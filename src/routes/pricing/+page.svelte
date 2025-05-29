@@ -15,35 +15,38 @@
 <Pricing />
 
 <Testimonials
-	testimonials={[
-		{
-			name: "Jane Smith",
-			position: "CTO",
-			company: "Tech Innovations",
-			quote:
-				"This solution transformed our workflow and increased productivity by 35% in just two months.",
-			image:
-				"https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-		},
-		{
-			name: "John Doe",
-			position: "Director of Operations",
-			company: "Global Solutions",
-			quote:
-				"The implementation was seamless and the support team was exceptional throughout the process.",
-			image:
-				"https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-		},
-		{
-			name: "Sarah Johnson",
-			position: "Product Manager",
-			company: "Future Systems",
-			quote:
-				"We've tried multiple solutions, but this is the only one that perfectly addressed all our requirements.",
-			image:
-				"https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&estimonial-3.jpg"
-		}
-	]}
+  testimonials={[
+    {
+      name: "Clara Weiss",
+      position: "Head of Quarry Operations",
+      company: "Lhoist Group",
+      quote: "Within weeks of deployment, sensmore cut our site’s near-misses by over 80%. That kind of impact made the investment a no-brainer.",
+      image: "/generated/image-a-professional-headshot-of-clara-weiss-a.webp"
+    },
+    {
+      name: "Cem Gürsel",
+      position: "Safety & Automation Lead",
+      company: "CEMEX Europe",
+      quote: "No cables, no winter fog breakdowns. sensmore’s radar-based mapping just works and delivers clear ROI, even in tough weather.",
+      image: "/generated/image-a-professional-headshot-of-cem-grsel-a-m.webp"
+    },
+    {
+      name: "Emil Lindström",
+      position: "Mining Technology Advisor",
+      company: "Paus GmbH",
+      quote: "I’ve worked with a lot of site tech. Nothing else integrates this fast—and keeps everyone aligned from day one.",
+      image: "/generated/image-a-professional-headshot-of-emil-lindstrm.webp"
+    }
+  ]}
 />
 
-<CallToAction />
+<CallToAction
+  title="Ready for safer, smarter operations?"
+  subtitle="See sensmore in action on your site"
+  description="Join the teams leading the industry with AI-driven heavy machinery. Boost productivity, keep your crew safe, and gain live control from pit to plant. See how real customers turn downtime into results–even in the harshest conditions."
+  imageSrc="/generated/image-a-cheerful-mining-site-manager-standing-.webp"
+  callsToAction={[
+    { href: "/contact", label: "Request a demo", variant: "primary" },
+    { href: "/contact", label: "Talk to an expert", variant: "secondary" }
+  ]}
+/>

@@ -23,22 +23,25 @@
 		"bg-primary-50 text-primary-600 dark:bg-primary-950 dark:text-primary-400 flex items-center justify-center rounded-full";
 
 	const benefits = [
-		{
-			title: "Flexible Work",
-			description: "Remote-first with flexible hours that respect work-life balance.",
-			icon: IconBriefcase
-		},
-		{
-			title: "Growth Opportunities",
-			description: "Continuous learning with mentorship and education stipends.",
-			icon: IconUsers
-		},
-		{
-			title: "Comprehensive Benefits",
-			description: "Health coverage, retirement plans, and generous paid time off.",
-			icon: IconHeart
-		}
-	];
+  {
+    title: "Build real-world AI",
+    description:
+      "Work on embodied AI and VLAM tech that is changing how entire industries operate — with impact you can see in the real world.",
+    icon: IconBriefcase
+  },
+  {
+    title: "Growth without ceiling",
+    description:
+      "Flat hierarchies, direct access to leadership, and opportunities to shape strategy and tech from day one.",
+    icon: IconUsers
+  },
+  {
+    title: "Flexible, meaningful work",
+    description:
+      "Flexible location and hours, modern Berlin/Potsdam offices, and a collaborative, supportive team from top universities and companies.",
+    icon: IconHeart
+  }
+];
 
 	const openings: JobOpening[] = [
 		// Engineering
@@ -121,78 +124,100 @@
 	];
 
 	const employeeTestimonials = [
-		{
-			name: "Michael Chen",
-			position: "Senior Developer",
-			company: "Engineering Team",
-			quote:
-				"Working here has given me the opportunity to tackle challenging problems while maintaining a healthy work-life balance. The team culture is supportive and collaborative.",
-			image:
-				"https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-		},
-		{
-			name: "Priya Sharma",
-			position: "Product Designer",
-			company: "Design Team",
-			quote:
-				"The creative freedom and opportunity to influence product decisions makes this the best place I've ever worked. I'm constantly learning and growing.",
-			image:
-				"https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-		},
-		{
-			name: "Marcus Johnson",
-			position: "Marketing Lead",
-			company: "Marketing Team",
-			quote:
-				"I joined three years ago and have grown tremendously. The leadership truly invests in your development and the work environment is both challenging and supportive.",
-			image:
-				"https://images.unsplash.com/photo-1531384441138-2736e62e0919?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-		}
-	];
+  {
+    name: "Sophia Zhang",
+    position: "Robotics Engineer",
+    company: "Engineering Team",
+    quote:
+      "I’ve never worked somewhere I felt so welcomed and empowered. Every idea counts, and my team celebrates our differences as strengths.",
+    image: "/generated/image-a-professional-headshot-of-a-smiling-fem.webp"
+  },
+  {
+    name: "Omar Khalil",
+    position: "Product Manager",
+    company: "Product Team",
+    quote:
+      "There are real opportunities to grow here — I’ve had mentors champion me and the trust to take on big projects from day one. The feedback and support are constant.",
+    image: "/generated/image-a-professional-headshot-of-a-middle-east.webp"
+  },
+  {
+    name: "Alex Rivera",
+    position: "Senior Operations Specialist",
+    company: "Operations",
+    quote:
+      "The environment is dynamic but everyone’s voice is heard. I feel respected and can truly shape how we work together as a team.",
+    image: "/generated/image-a-professional-headshot-of-a-non-binary-.webp"
+  }
+];
 
 	const processSteps = [
-		{
-			step: 1,
-			title: "Apply",
-			description:
-				"Submit your application through our careers portal with your resume and portfolio."
-		},
-		{
-			step: 2,
-			title: "Interview",
-			description: "Meet with our team to discuss your experience, skills, and career aspirations."
-		},
-		{
-			step: 3,
-			title: "Welcome aboard",
-			description: "Join our team and start your journey building the future with us."
-		}
-	];
+  {
+    step: 1,
+    title: "Apply online",
+    description:
+      "Send your CV (or LinkedIn) and a few lines on why sensmore excites you. Every application is reviewed by a real person."
+  },
+  {
+    step: 2,
+    title: "Intro call",
+    description:
+      "A short call to get to know each other, share your story, and answer any burning questions."
+  },
+  {
+    step: 3,
+    title: "Role deep dive",
+    description:
+      "Interview or challenge tailored to your field. We look for practical skills and how you solve real problems."
+  },
+  {
+    step: 4,
+    title: "Meet the team",
+    description:
+      "Connect with founders and future teammates, and get a sense of sensmore’s working style and culture."
+  },
+  {
+    step: 5,
+    title: "Offer & feedback",
+    description:
+      "We move quickly (usually within a week). You’ll get clear feedback and a transparent offer, plus space for all your questions."
+  }
+];
 
 	const values = [
-		{
-			icon: IconHeart,
-			title: "Passion",
-			description: "We're driven by a shared passion for innovation and excellence."
-		},
-		{
-			icon: IconUsers,
-			title: "Collaboration",
-			description: "We believe in teamwork and collaboration to achieve great things."
-		},
-		{
-			icon: IconGlobe,
-			title: "Global Impact",
-			description: "We're committed to making a positive impact on the world."
-		}
-	];
+  {
+    icon: IconHeart,
+    title: "Builders, not spectators",
+    description: "We work hands-on and take ownership, whether we’re solving field challenges or building new prototypes."
+  },
+  {
+    icon: IconUsers,
+    title: "Courage & curiosity",
+    description: "We welcome hard questions and encourage experimentation. Curiosity and bold ideas drive our progress."
+  },
+  {
+    icon: IconGlobe,
+    title: "Grit in every environment",
+    description: "From the lab to the mine, we build for reality and thrive in messy, tough situations."
+  },
+  {
+    icon: IconBriefcase,
+    title: "Voices heard",
+    description: "Good ideas win. Everyone can influence big decisions—regardless of role or background."
+  },
+  {
+    icon: IconHeart,
+    title: "Diversity & belonging",
+    description: "We support each other, celebrate differences, and know that varied perspectives make our team stronger."
+  }
+];
 </script>
 
 <!-- Hero Section -->
 
 <SecondaryHero
-	title="Join our team of innovators"
-	subtitle="We're looking for passionate people to help us build the future of digital experiences. Discover your next opportunity with us."
+	title="Advance embodied AI. Transform heavy industry."
+	subtitle="Join world-class minds. Build real-world impact that scales."
+	imageSrc="/generated/image-a-diverse-team-of-engineers-collaboratin.webp"
 />
 
 <!-- Why Join Us Section -->
